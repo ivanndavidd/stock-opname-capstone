@@ -46,7 +46,7 @@ tqdm==4.66.5
 # Utils
 pyyaml==6.0.2
 pycocotools==2.0.7
-rich==14.2.0
+rich==13.7.1
 markdown-it-py==4.0.0
 pygments==2.19.2
 mdurl==0.1.2
