@@ -8,7 +8,11 @@
 # torch==2.1.0
 # torchvision==0.16.0
 
-# ✅ Use only PyTorch if needed for inference (light version)
+pip>=25.3
+setuptools>=75.0.0
+wheel>=0.43.0
+
+# Core Deep Learning
 torch==2.9.0
 torchvision==0.24.0
 
@@ -16,43 +20,33 @@ torchvision==0.24.0
 ultralytics==8.1.0
 
 # Computer Vision
-opencv-python-headless==4.8.1.78
-pillow==10.1.0
+opencv-python-headless==4.10.0.84
+pillow==11.0.0
 
 # Data Processing
-numpy==1.24.3
+numpy==1.26.4
 pandas==2.1.3
-scikit-learn==1.3.2
+scikit-learn==1.5.2
 
 # Time Series
-statsmodels==0.14.0
+statsmodels==0.14.1
 
 # Visualization
-matplotlib==3.8.2
-seaborn==0.13.0
-plotly==5.18.0
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
 
-# ⚠️ Web Framework (COMMENTED: Streamlit already handles web server)
-# flask==3.0.0
-# flask-cors==4.0.0
-
-# ✅ Web Interface
+# Web Framework
 streamlit==1.29.0
 
 # API & Requests
-requests==2.31.0
-tqdm==4.66.1
-
-# ⚠️ Jupyter (COMMENTED: not needed in deployment)
-# jupyter==1.0.0
-# ipykernel==6.27.1
-# notebook==7.0.6
+requests==2.32.3
+tqdm==4.66.5
 
 # Utils
-pyyaml==6.0.1
+pyyaml==6.0.2
 pycocotools==2.0.7
-
-# Upgrade pip to latest version for compatibility
-pip>=25.3
-setuptools>=75.0.0
-wheel>=0.43.0
+rich==14.2.0
+markdown-it-py==4.0.0
+pygments==2.19.2
+mdurl==0.1.2
