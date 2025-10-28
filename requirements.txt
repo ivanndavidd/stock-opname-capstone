@@ -50,3 +50,4 @@ rich==13.7.1
 markdown-it-py==4.0.0
 pygments==2.19.2
 mdurl==0.1.2
+
