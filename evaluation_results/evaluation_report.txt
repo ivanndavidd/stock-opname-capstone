@@ -1,0 +1,79 @@
+
+======================================================================
+YOLOv8 MODEL EVALUATION REPORT
+======================================================================
+
+Project: Stock Opname Monitoring dengan Deep Learning
+Author: Ivan David (B25B8M113)
+Date: 2025-10-28 21:17:13
+
+======================================================================
+MODEL INFORMATION
+======================================================================
+
+Model File: best.pt
+Model Size: 6.20 MB
+Architecture: YOLOv8n (Nano)
+Input Size: 640x640
+
+======================================================================
+PERFORMANCE METRICS
+======================================================================
+
+mAP@0.5:      0.9950
+mAP@0.5:0.95: 0.9950
+Precision:    1.0000
+Recall:       0.9960
+F1-Score:     0.9980
+
+======================================================================
+DETECTION STATISTICS
+======================================================================
+
+Average Detections/Image: 152.56
+Median Detections/Image:  154.00
+Min Detections:           124
+Max Detections:           178
+
+Average Confidence:       0.471
+Median Confidence:        0.452
+
+======================================================================
+INFERENCE SPEED
+======================================================================
+
+Average Inference Time:   119.09 ms/image
+FPS (Frames Per Second):  8.40
+
+======================================================================
+ASSESSMENT
+======================================================================
+
+Overall Performance: EXCELLENT
+
+Strengths:
+- Decent accuracy for shelf product detection
+- Fast inference speed suitable for real-time applications
+- Lightweight model (small file size)
+
+Recommendations:
+- Model is suitable for demonstration and testing purposes
+- For production deployment, consider:
+  * Training with full dataset (100% data)
+  * Increasing training epochs (50-100)
+  * Using larger model variant (YOLOv8s or YOLOv8m)
+  * Post-processing optimization
+
+======================================================================
+FILES GENERATED
+======================================================================
+
+1. metrics.csv - Quantitative performance metrics
+2. metrics_visualization.png - Visual representation of metrics
+3. sample_predictions.png - Inference results on sample images
+4. detection_statistics.png - Statistical analysis of detections
+5. evaluation_report.txt - This comprehensive report
+
+======================================================================
+END OF REPORT
+======================================================================

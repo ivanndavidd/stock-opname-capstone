@@ -1,0 +1,143 @@
+
+======================================================================
+TIME SERIES FORECASTING - EVALUATION REPORT
+======================================================================
+
+Project: Stock Opname Monitoring dengan Deep Learning
+Phase: Week 3-4 - Time Series Forecasting
+Author: Ivan David (B25B8M113)
+Date: 2025-10-28 21:43:18
+
+======================================================================
+DATASET INFORMATION
+======================================================================
+
+Total Days: 365
+Date Range: 2023-01-01 00:00:00 to 2023-12-31 00:00:00
+Training Samples: 268
+Test Samples: 67
+Lookback Window: 30 days
+Forecast Horizon: 7 days
+
+======================================================================
+LSTM MODEL PERFORMANCE
+======================================================================
+
+Architecture: Bidirectional LSTM with Dropout
+Training Epochs: 36
+
+Test Metrics:
+  RMSE: 7.19
+  MAE:  5.98
+  R²:   0.6694
+
+======================================================================
+PROPHET MODEL PERFORMANCE
+======================================================================
+
+Test Metrics:
+  RMSE: 58.62
+  MAE:  49.29
+  R²:   -20.9638
+
+======================================================================
+MODEL COMPARISON
+======================================================================
+
+Best Model: LSTM
+
+LSTM:
+  + Deep learning approach
+  + Captures complex patterns
+  + Good for non-linear trends
+  - Requires more data
+  - Longer training time
+
+Prophet:
+  + Handles seasonality well
+  + Fast training
+  + Interpretable components
+  + Confidence intervals
+  - May miss complex patterns
+
+======================================================================
+FORECAST SUMMARY
+======================================================================
+
+Next 7 Days Prediction:
+  Average: 162.8 items
+  Min: 158.5 items
+  Max: 166.6 items
+  Trend: Decreasing
+
+Uncertainty: ±6.0 items (based on test MAE)
+
+======================================================================
+BUSINESS INSIGHTS
+======================================================================
+
+1. Stock Planning:
+   - Expected demand shows downward trend
+   - Maintain safety stock of 12 items (2x MAE)
+   - Reorder when stock falls below 153 items
+
+2. Inventory Optimization:
+   - Average daily requirement: 163 items
+   - Peak requirement: 167 items
+   - Suggested reorder quantity: 1140 items/week
+
+3. Model Reliability:
+   - R² Score: 66.94% of variance explained
+   - Prediction Error: ±6.0 items on average
+   - Confidence Level: Moderate
+
+======================================================================
+RECOMMENDATIONS
+======================================================================
+
+1. For Production Use:
+   - Collect real historical sales data (minimum 6 months)
+   - Retrain model monthly with new data
+   - Monitor prediction accuracy and adjust as needed
+   - Consider external factors (holidays, promotions)
+
+2. Model Improvements:
+   - Add external features (weather, events, promotions)
+   - Experiment with different lookback windows
+   - Try ensemble methods (LSTM + Prophet combined)
+   - Implement automated retraining pipeline
+
+3. Integration with Detection:
+   - Use detection counts as input features
+   - Cross-validate predicted vs detected stock
+   - Alert on large discrepancies
+   - Optimize reorder triggers
+
+======================================================================
+FILES GENERATED
+======================================================================
+
+Data:
+  1. historical_stock_data.csv - Historical data
+  2. future_forecast.csv - LSTM predictions
+  3. prophet_forecast.csv - Prophet predictions
+
+Models:
+  4. lstm_stock_forecasting.h5 - Trained LSTM model
+
+Metrics:
+  5. lstm_metrics.csv - LSTM performance
+  6. model_comparison.csv - LSTM vs Prophet
+
+Visualizations:
+  7. eda_timeseries.png - Exploratory analysis
+  8. lstm_training_history.png - Training curves
+  9. lstm_predictions.png - Model predictions
+  10. future_forecast_plot.png - Future forecast
+
+Reports:
+  11. forecasting_report.txt - This comprehensive report
+
+======================================================================
+END OF REPORT
+======================================================================

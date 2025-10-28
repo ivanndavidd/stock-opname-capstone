@@ -1,0 +1,206 @@
+# Dataset files (TOO LARGE!)
+data/
+dataset/
+images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# ====================
+# Python
+# ====================
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+*.virtualenv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# ====================
+# Streamlit
+# ====================
+
+# Streamlit cache
+.streamlit/
+
+# ====================
+# Database
+# ====================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ====================
+# Uploads & Results
+# ====================
+
+# User uploads
+uploads/
+upload/
+temp/
+tmp/
+
+# Generated results
+results/
+output/
+outputs/
+*.csv
+*.xlsx
+
+# Time series data
+timeseries_data/
+
+# ====================
+# IDE & Editors
+# ====================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# Operating System
+# ====================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ====================
+# Logs
+# ====================
+
+*.log
+logs/
+*.out
+
+# ====================
+# Environment Variables
+# ====================
+
+.env
+.env.local
+.env.*.local
+*.env
+
+# ====================
+# Backup files
+# ====================
+
+*.bak
+*.swp
+*.swo
+*~
+*.backup
+
+# ====================
+# Documentation builds
+# ====================
+
+docs/_build/
+site/
+
+# ====================
+# API Keys & Secrets
+# ====================
+
+secrets.yaml
+credentials.json
+*.key
+*.pem
+
+# ====================
+# Large files
+# ====================
+
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ====================
+# Keep these (exceptions)
+# ====================
+
+# Keep empty directories
+!models/.gitkeep
+!uploads/.gitkeep
+!results/.gitkeep
+!timeseries_data/.gitkeep
+
+# Keep requirements
+!requirements.txt
+
+# Keep documentation
+!README.md
+!*.md
+
+# Keep notebooks (optional - choose based on size)
+# Uncomment to exclude notebooks:
+# *.ipynb
