@@ -1,6 +1,14 @@
-# Core Deep Learning
-tensorflow==2.15.0
-keras==2.15.0
+# ========================================
+# Optimized requirements for Streamlit Cloud
+# ========================================
+
+# ⚠️ Core Deep Learning (COMMENTED: too large for Streamlit Cloud)
+# tensorflow==2.15.0
+# keras==2.15.0
+# torch==2.1.0
+# torchvision==0.16.0
+
+# ✅ Use only PyTorch if needed for inference (light version)
 torch==2.1.0
 torchvision==0.16.0
 
@@ -8,7 +16,7 @@ torchvision==0.16.0
 ultralytics==8.1.0
 
 # Computer Vision
-opencv-python==4.8.1.78
+opencv-python-headless==4.8.1.78
 pillow==10.1.0
 
 # Data Processing
@@ -24,20 +32,25 @@ matplotlib==3.8.2
 seaborn==0.13.0
 plotly==5.18.0
 
-# Web Framework
-flask==3.0.0
-flask-cors==4.0.0
+# ⚠️ Web Framework (COMMENTED: Streamlit already handles web server)
+# flask==3.0.0
+# flask-cors==4.0.0
+
+# ✅ Web Interface
 streamlit==1.29.0
 
 # API & Requests
 requests==2.31.0
 tqdm==4.66.1
 
-# Jupyter
-jupyter==1.0.0
-ipykernel==6.27.1
-notebook==7.0.6
+# ⚠️ Jupyter (COMMENTED: not needed in deployment)
+# jupyter==1.0.0
+# ipykernel==6.27.1
+# notebook==7.0.6
 
 # Utils
 pyyaml==6.0.1
 pycocotools==2.0.7
+
+# Upgrade pip to latest version for compatibility
+pip>=25.3
