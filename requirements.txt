@@ -54,3 +54,5 @@ pycocotools==2.0.7
 
 # Upgrade pip to latest version for compatibility
 pip>=25.3
+setuptools>=75.0.0
+wheel>=0.43.0
