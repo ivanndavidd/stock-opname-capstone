@@ -9,8 +9,8 @@
 # torchvision==0.16.0
 
 # ✅ Use only PyTorch if needed for inference (light version)
-torch==2.1.0
-torchvision==0.16.0
+torch==2.5.1
+torchvision==0.20.1
 
 # YOLOv8 (Object Detection)
 ultralytics==8.1.0
